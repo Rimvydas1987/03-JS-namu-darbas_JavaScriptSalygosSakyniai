@@ -5,25 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Max number</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../CSS/form.css">
+    <link rel="stylesheet" href="../CSS/main.css">
 </head>
 <body>
+    <div>
+        <h>Namu darbas Nr.3</h>
+        <p>Pasirinkite norimą užduotį:</p>
+    </div>
+    <div class="buttons">
+        <a href="../1-uzduotis/index.html">Užduotis Nr.1</a>
+        <a href="../2-uzduotis/index.html">Užduotis Nr.2</a>
+        <a href="../3-uzduotis/index.html">Užduotis Nr.3</a>
+    </div>
+    <hr>
     <p>Įveskite skaičius:</p>
-    <label for="reiksme_A">A </label>
-    <input id="reiksme_A" type="number"/>
-    <br>
-    <label for="reiksme_B">B </label>
-    <input id="reiksme_B" type="number"/>
-    <br><br>
-    <button onclick="MaxNumber()">skaičiuoti</button>
-    <br><br>
-    <label for="Atsakymas">Didžiausias skaičius yra: </label>
-    <input id="Atsakymas" type="number" disabled/>
-    <br><br><br>
-    <a class="b-back" href="../index.html">Grįžti atgal į užduotys</a>
 
-
-
+    <div class="label-input">
+        <label for="reiksme_A">A </label>
+        <input id="reiksme_A" type="number"/>
+    </div>
+    <div class="label-input">
+        <label for="reiksme_B">B </label>
+        <input id="reiksme_B" type="number"/>
+    </div>
+    <div>
+        <button class="function-button" onclick="MaxNumber()">skaičiuoti</button>
+    </div>
+    <div>
+        <label class="last-label" for="Atsakymas">Didžiausias skaičius yra: </label>
+        <input id="Atsakymas" type="number" disabled/>
+    </div>
     <script src="../1-uzduotis/script.js"></script>
 </body>
 </html>
